@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from jsonlinter.linter import _lint_text, _collect_issues
-
+from jsonlinter.linter import _lint_text
 
 def test_trailing_comma_issue() -> None:
     issues = list(_lint_text("sample.json", '{"a": 1,}'))
